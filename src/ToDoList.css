@@ -1,22 +1,22 @@
 body {
-    background: #282c36;
-    color: #ffffff;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
-  .todo-container {
-    max-width: 550px;
-    width: 750px;
-    padding: 20px;
-    background-color: #333742;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  }
+  background: #282c36;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.todo-container {
+  max-width: 550px;
+  width: 90%; /* Use a percentage for responsiveness */
+  padding: 20px;
+  background-color: #333742;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
   
   .todo-label {
     margin-bottom: 10px;
@@ -83,4 +83,16 @@ body {
   h2{
     text-align: center;
   }
+  @media screen and (max-width: 768px) {
+    /* Adjust styling for screens up to 768px wide */
+    .todo-container {
+      width: 80%;
+    }
+  }
   
+  @media screen and (max-width: 480px) {
+    /* Adjust styling for screens up to 480px wide */
+    .todo-container {
+      width: 95%;
+    }
+  }
